@@ -1,0 +1,1 @@
+//Ez a javascript kód.
