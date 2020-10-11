@@ -1,4 +1,4 @@
-Definíció:valami
+Definíció:
 	Végesszámú pontból és ezeket összekötő vonalakból álló alakzatot gráfnak nevezünk.
 Definíció:
 	A pontokat a gráf csúcsainak, az esetleg összekötő vonalakat a gráf éleinek nevezzük.
@@ -40,4 +40,3 @@ Definíció:
 	Az egyszerű, összefüggő, kör nélküli gráf a fa.
 Tétel:
 	Több fát együtt ligetnek vagy erdőnek nevezünk.
-valami
