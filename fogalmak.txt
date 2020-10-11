@@ -1,0 +1,18 @@
+Végesszámú pontból és ezeket összekötő vonalakból álló alakzatot gráfnak nevezünk.
+
+A pontokat a gráf csúcsainak, az esetleg összekötő vonalakat a gráf éleinek nevezzük.
+
+Akkor járható be egy gráf, ha páratlan csúcsok/élek száma 2.
+
+Huroknak nevezzük az olyan élt, amelynek két végpontja ugyanaz.
+
+Többszörös élt kapunk, ha két pont között egynél több élt húzunk.
+
+Egy gráfot egyszerű gráfnak nevezünk, ha pontjainak és éleinek halmaza véges és a gráfban nincs se hurok, se többszörös él.
+
+Egy gráfban az egy csúcsba befutó élek számát a csúcs fokszámának nevezzük.
+
+Azt a gráfot, amelyben bármelyik pontból az összes többibe egy és csakis egy él fut teljes gráfnak nevezzük. Az 1 izolált pontból álló gráf is teljes gráf.
+
+Egy adott gráfhoz azt a gráfot, amely teljes gráffá egészíti ki az adott gráf kiegészítő vagy komplementár gráfjának nevezzük.
+
