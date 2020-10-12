@@ -27,3 +27,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function toDark() {
+    var sotetites = document.body;
+    sotetites.classList.toggle("sotet");
+}
