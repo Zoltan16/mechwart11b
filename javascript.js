@@ -31,4 +31,6 @@ function showSlides(n) {
 function toDark() {
     var sotetites = document.body;
     sotetites.classList.toggle("sotet");
+    var darklista = document.tbody;
+    darklista.classList.toggle("tbodydark");
 }
