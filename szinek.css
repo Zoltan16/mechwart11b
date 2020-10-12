@@ -3,17 +3,12 @@
     color: white;
 }
 
-.navbar-custom { 
-    background-color: black;
-    color: white;
-}
-
-.vilagos{
+.body{
     background-color: white;
     color: black;
 }
 
-.navbar-custom { 
-    background-color: white;
+.card{
+    background-color: #cec5c5;
     color: black;
 }
