@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Königsbergi hídprobléma</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href = stilus.css>
     <link rel="stylesheet" type="text/css" href = szinek.css>
+    <link rel="stylesheet" type="text/css" href = KonigsbergCSS.css>
 </head>
 
 <body> 
@@ -41,6 +43,29 @@
   </div>
 </nav>
     
+    <header id="cim">
+        <h1><i>Königsberg, a város, mely utat tört a gráfelméletnek</i></h1>
+    </header>
+    
+    <p class="p" id="bal">A <b>königsbergi hidak problémája</b> egy híres matematikai probléma, amit <i>Leonhard Euler</i> oldott meg.</p> 
+    <img src="Konigsberg/Konigsberg_bridges.png" class="kep" id="hidak">
+    <p class="p">A probléma története, hogy a poroszországi Königsberg <i>(most Kalinyingrád, Oroszország)</i> városban hét híd ívelt át a várost átszelő <i>Prégel</i> folyón úgy, hogy ezek a folyó két szigetét is érintették. A königsbergiek azzal a kérdéssel fordultak Eulerhez, vajon végig lehet-e menni az összes hídon úgy, hogy mindegyiken csak egyszer haladjanak át, és egyúttal visszaérjenek a kiindulópontba. 1736-ban Euler bebizonyította, hogy ez lehetetlen.</p>
+    
+    <h3 class="h3">Euler megoldása</h3>
+    <p class="p" id="specp">A bizonyítás során Euler a problémát a <i>gráfelmélet</i> nyelvén fogalmazta meg, azaz leegyszerűsítette azt.</p>
+    <img src="Konigsberg/Konigsberg_graph.svg.png" class="kep" id="graf">
+    <p class="p">A földeket, azaz a folyó partjait beleértve a szigeteket is <i>csomópontoknak</i>, a hidakat pedig <i>éleknek</i> tekintette a mai megfogalmazás szerint. Az így létrehozott csomópontok és élek pedig egy <i>gráfot</i> határoznak meg.</p>
+    <p class="p" id="kicsip">Euler észrevette, hogy a problémát az így létrehozott gráf csomópontjainak a fokszámára lehet visszavezetni. A csomópont fokszáma alatt az adott csomóponthoz csatlakozó élek számát értjük. A konkrét esetben a hidak elhelyezkedése alapján megalkotott gráfban három pontnak 3 a fokszáma, egynek pedig 5. Euler rájött, hogy akkor és csak akkor létezik ebben az adott gráfban a hidakon pontosan egyszer végighaladó séta, ha minden csomópont fokszáma páros. A fenti feltételnek eleget tevő összefüggő gráfokat ma zárt Euler-gráfnak nevezzük, az élek sorozatát, amelyeken a bejárás megvalósul, pedig Euler-vonalnak illetve egy zárt Euler-vonalnak. A fenti feltételnek megfelelő bejárást zárt Euler-sétának hívjuk. Mivel a königsbergi hidak gráfjában több páratlan fokszámú csúcspont is található, ezért Euler eredményéből következik, hogy nem lehet bejárni a königsbergi hidakat a fent megkövetelt módon.</p>
+    
+    <h3 class="h3">Matematikai jelentősége</h3>
+    <p class="p" id="nopadp1">A matematika történetében a königsbergi hidak problémáját, illetve ennek Euler-féle megoldását tartják az első gráfelméleti problémának. Azóta a gráfelmélet a kombinatorika egy önálló területévé vált.</p>
+    <p class="p" id="nopadp2">Ezen túlmenően az, hogy Euler felismerte, hogy a probléma megoldásának a kulcsa a hidak, illetve pontosabban az egy partszakaszhoz kapcsolódó hidak számában, nem pedig ezek konkrét elhelyezkedésében keresendő, a topológiai szemlélet legkorábbi megjelenésének is tekinthető.</p>
+    
+    <footer>
+        <div id="footer">
+            <p class="p" id="footer-text">Ez az oldal Boross Máté munkája.</p>
+        </div>
+    </footer>
     
 </main>
     <script src="javascript.js"></script>
