@@ -1,0 +1,42 @@
+Definíció:
+	Végesszámú pontból és ezeket összekötő vonalakból álló alakzatot gráfnak nevezünk.
+Definíció:
+	A pontokat a gráf csúcsainak, az esetleg összekötő vonalakat a gráf éleinek nevezzük.
+Definíció:
+	Akkor járható be egy gráf, ha páratlan csúcsok/élek száma 2.
+Definíció:
+	Huroknak nevezzük az olyan élt, amelynek két végpontja ugyanaz.
+Definíció:
+	Többszörös élt kapunk, ha két pont között egynél több élt húzunk.
+Definíció:
+	Egy gráfot egyszerű gráfnak nevezünk, ha pontjainak és éleinek halmaza véges és a gráfban nincs se hurok, se többszörös él.
+Definíció:
+	Egy gráfban az egy csúcsba befutó élek számát a csúcs fokszámának nevezzük.
+Definíció:
+	Azt a gráfot, amelyben bármelyik pontból az összes többibe egy és csakis egy él fut teljes gráfnak nevezzük. Az 1 izolált pontból álló gráf is teljes gráf.
+Definíció:
+	Egy adott gráfhoz azt a gráfot, amely teljes gráffá egészíti ki az adott gráf kiegészítő vagy komplementár gráfjának nevezzük.
+Tétel:
+	Az n pontú teljes gráf éleinek száma n(n-1)/2.
+Tétel:
+	Az n csúcsú teljes gráfban a fokszámok összege n(n-1). Ez mindig páros szám.
+Tétel:
+	Bármelyik gráfban a fokszámok összege páros.
+Definíció:
+	Ha egy gráfban egyik pontból élek mentén úgy el lehet jutni egy másik pontba, hogy egy csúcsot sem érintünk kétszer, akkor ezt az élsorozatot útnak nevezzük.
+Definíció:
+	Az önmagába visszatérő utat körnek nevezzük.
+Definíció:
+	Séta a gráf éleinek egy tetszőleges olyan sorozata, ahol az egymást követő éleknek van közös végpontja.
+Definíció:
+	Az olyan séta, amelyik minden élt csupán egyszer érintünk, a vonal.
+Definíció:
+	Azt a gráfot, amelyikben bármelyik két csúcsot legfeljebb egy él köt össze, ahol nem szükséges, hogy összekösse a csúcsokat egy él, egyszerű gráfnak nevezzük.
+Definíció:
+	Két gráfot akor nevezünk izomorfnak, ha csúcsait és éleit kölcsönösen meg tudjuk feleltetni egymásnak.
+Definíció:
+	Ha egy gráf olyan, hogy bármelyik csúcsába élek mentén el lehet jutni, összefüggő gráfnak nevezzük.
+Definíció:
+	Az egyszerű, összefüggő, kör nélküli gráf a fa.
+Tétel:
+	Több fát együtt ligetnek vagy erdőnek nevezünk.

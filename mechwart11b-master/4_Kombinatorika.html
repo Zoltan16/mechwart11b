@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinatorika</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href = stilus.css>
+    <link rel="stylesheet" type="text/css" href = szinek.css>
+    <link rel="stylesheet" type="text/css" href = komb.css>
+</head>
+
+<body> 
+<main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand">Menü</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="1_Kezdolap.html">Kezdőlap</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gráfok</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="2_Grafok.html">Gráfelméleti definíciók és tételek</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="3_Konigsberg.html">A leghíresebb gráfelméleti probléma</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="4_Kombinatorika.html">Kombinatorikai fogalmak</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="5_Forrasok.html">Források</a>
+      </li>
+        <li class="nav-item">
+        <a onclick="toDark()" class="nav-link">DÁRKMÓD</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+    <h1 class="cim">Kombinatorikai alapfogalmak és képletek.</h1>
+        <h3 class="pvc">Permutációk</h3>
+            <p class=defin>Permutáció: az n elem sorrendjeinek számát az n elem permutációjának nevezzük, ahol fontos a sorrend.</p>
+            <p class="defin">Ha az n elem különböző, akkor ismétlés nélküli permutációnak nevezzük.</p>
+    <img src="Kombinatorika kepek/1perm.png" class="pvckep">
+            <p class="defin">Ha az n elem közt vannak azonosak, akkor ismétléses permutációnak nevezzük.</p>
+    <img src="Kombinatorika kepek/2ismperm.png" class="pvckep">
+        <h3 class="pvc">Variációk</h3>
+            <p class="defin">Variáció: az n elem k-ad osztályú variációját a k elem kiválasztását és sorbarendezését értjük.</p>
+            <p class="defin">Ha az n elem különböző, akkor ismétlés nélküli variációról beszélünk.</p>
+                <img src="Kombinatorika kepek/3var.png" class="pvckep">
+            <p class="defin">Ha k nagyobb, kisebb vagy egyenlő n-nel, akkor ismétléses variációról beszélünk.</p>
+                <img src="Kombinatorika kepek/4ismvar.png" class="pvckep">
+        <h3 class="pvc">Kombináció</h3>
+            <p class="defin">Kombináció: ha n elem közül k elemet kiválasztunk ahol k kisebb vagy egyenlő n-nel, az elemek sorrendjére nem vagyunk tekintettel, ezt az n elem k-ad osztályú kombinációjának nevezzük.</p>
+            <p class="defin">Ha az n elem különböző, akkor ismétlés nélküli kombinációnak nevezzük.</p>
+                <img src="Kombinatorika kepek/5komb.png" class="pvckep">
+            <p class="defin">Ha van ismétlődő elem az n-ben, akkor ismétléses kombinációnak nevezzük.</p>
+                <img src="Kombinatorika kepek/6ismkomb.png" class="pvckep">
+    <footer>
+        <div id="footer">
+            <p class="p" id="footer-text">Boross Károly készítette.</p>
+        </div>
+    </footer>
+</main>
+    <script src="javascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
