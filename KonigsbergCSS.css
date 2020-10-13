@@ -1,0 +1,82 @@
+#cim{
+    padding: 1em;
+    padding-bottom: 2em;
+    color: 
+}
+
+.h3{
+    padding: 0.5em;
+}
+
+.p{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .p {
+    font-size: 20px;
+  }
+}
+
+.kep{
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0.3em;
+    border: 0.2em solid #1cb81e;
+}
+
+@media screen and (min-width: 601px) {
+  #hidak {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hidak, #graf {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #graf {
+    float: left;
+  }
+}
+
+#specp{
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 601px) {
+  #kicsip {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #kicsip {
+    font-size: 17px;
+  }
+}
+
+#nopadp1{
+    padding-bottom: 0;
+}
+
+#nopadp2{
+    padding-top: 0;
+}
+
+#footer-text{
+    text-align: center
+}
+
+#footer{
+    padding-top: 0.5em;
+    background: #707070;
+    padding-bottom: 0.5em;
+}
