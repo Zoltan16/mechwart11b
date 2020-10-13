@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <title>Kombinatorika és gráfelmélet</title>
+    <title>Kezdőlap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href = stilus.css>
     <link rel="stylesheet" type="text/css" href = szinek.css>
+    <link rel="stylesheet" type="text/css" href = KonigsbergCSS.css>
 </head>
 
 <body> 
@@ -35,18 +36,18 @@
         <a class="nav-link" href="5_Forrasok.html">Források</a>
       </li>
         <li class="nav-item">
-        <a onclick="toDark()" class="nav-link">DÁRKMÓD</a>
+        <a onclick="toDark()" class="nav-link">Dark Mode</a>
         </li>
     </ul>
   </div>
 </nav>
-<header>
-<h1 id="focim">
+<header id="cim">
+<h1>
      Üdvözöljük weboldalunkon!
 </h1>
 </header>
     
-    <p id="udvozles">A weboldalon a matematika témakör kombinatórika és gráfelmélet témával foglalkozunk.</p>
+    <p class="p">A weboldalon a matematika kombinatorikai és gráfelméleti részével foglalkozunk.</p>
     
     <p id="keszitettek">Készítették:</p>
     
@@ -83,105 +84,14 @@
                 </div>
             </div>
         </div>
-    
+    <div>
     <p>
     <canvas id="canvas" width="400" height="400" style="background-color:#333"></canvas>
+<script src="ora.js"> //Óra
 
-<script> //Óra
-function drawClock() {
-  ctx.arc(0, 0, radius, 0 , 2 * Math.PI);
-  ctx.fillStyle = "white";
-  ctx.fill();
-}
-    function drawClock() {
-  drawFace(ctx, radius);
-}
-
-function drawFace(ctx, radius) {
-  var grad;
-
-  ctx.beginPath();
-  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
-  ctx.fillStyle = 'white';
-  ctx.fill();
-
-  grad = ctx.createRadialGradient(0, 0 ,radius * 0.95, 0, 0, radius * 1.05);
-  grad.addColorStop(0, '#333');
-  grad.addColorStop(0.5, 'white');
-  grad.addColorStop(1, '#333');
-  ctx.strokeStyle = grad;
-  ctx.lineWidth = radius*0.1;
-  ctx.stroke();
-
-  ctx.beginPath();
-  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
-  ctx.fillStyle = '#333';
-  ctx.fill();
-} 
-    function drawClock() {
-  drawFace(ctx, radius);
-  drawNumbers(ctx, radius);
-}
-
-function drawNumbers(ctx, radius) {
-  var ang;
-  var num;
-  ctx.font = radius * 0.15 + "px arial";
-  ctx.textBaseline = "middle";
-  ctx.textAlign = "center";
-  for(num = 1; num < 13; num++){
-    ang = num * Math.PI / 6;
-    ctx.rotate(ang);
-    ctx.translate(0, -radius * 0.85);
-    ctx.rotate(-ang);
-    ctx.fillText(num.toString(), 0, 0);
-    ctx.rotate(ang);
-    ctx.translate(0, radius * 0.85);
-    ctx.rotate(-ang);
-  }
-}
-    function drawClock() {
-  drawFace(ctx, radius);
-  drawNumbers(ctx, radius);
-  drawTime(ctx, radius);
-}
-
-function drawTime(ctx, radius){
-  var now = new Date();
-  var hour = now.getHours();
-  var minute = now.getMinutes();
-  var second = now.getSeconds();
-  //hour
-  hour = hour%12;
-  hour = (hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
-  drawHand(ctx, hour, radius*0.5, radius*0.07);
-  //minute
-  minute = (minute*Math.PI/30)+(second*Math.PI/(30*60));
-  drawHand(ctx, minute, radius*0.8, radius*0.07);
-  // second
-  second = (second*Math.PI/30);
-  drawHand(ctx, second, radius*0.9, radius*0.02);
-}
-
-function drawHand(ctx, pos, length, width) {
-  ctx.beginPath();
-  ctx.lineWidth = width;
-  ctx.lineCap = "round";
-  ctx.moveTo(0,0);
-  ctx.rotate(pos);
-  ctx.lineTo(0, -length);
-  ctx.stroke();
-  ctx.rotate(-pos);
-}
-    var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-var radius = canvas.height / 2;
-ctx.translate(radius, radius);
-radius = radius * 0.90
-//drawClock();
-setInterval(drawClock, 1000);
 </script>
         </p>
+        </div>
 </main>
 <script src="javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
