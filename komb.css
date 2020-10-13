@@ -5,6 +5,11 @@
 }
 .pvckep{
     height: 80px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0.3em;
+    border: 0.2em solid #1cb81e;
 }
 .pvc{
     padding-left: 3vmax;
@@ -13,8 +18,35 @@
 .defin{
     padding-left: 5vmax;
     padding-right: 20px;
+    
+    
 }
+.defin1{
+    padding-left: 5vmax;
+    padding-right: 20px;
+    float: left;
+    
+}
+
+.defin2{
+    padding-left: 5vmax;
+    padding-right: 20px;
+    float: left;
+    
+}
+
 .lab{
     padding-left: 10px;
     font-weight: bolder;
+}
+
+.h3{
+    padding: 0.5em;
+}
+
+
+@media screen and (max-width: 600px) {
+  .p {
+    font-size: 20px;
+  }
 }
